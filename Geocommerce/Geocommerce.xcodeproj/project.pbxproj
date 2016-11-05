@@ -10,6 +10,7 @@
 		954AFCB11DCE61B00009B62F /* Geocommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954AFCA71DCE61B00009B62F /* Geocommerce.framework */; };
 		954AFCB61DCE61B00009B62F /* GeocommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AFCB51DCE61B00009B62F /* GeocommerceTests.swift */; };
 		954AFCB81DCE61B10009B62F /* Geocommerce.h in Headers */ = {isa = PBXBuildFile; fileRef = 954AFCAA1DCE61B00009B62F /* Geocommerce.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		954AFCC31DCE65A30009B62F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AFCC21DCE65A30009B62F /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,8 @@
 		954AFCB01DCE61B00009B62F /* GeocommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocommerceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954AFCB51DCE61B00009B62F /* GeocommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocommerceTests.swift; sourceTree = "<group>"; };
 		954AFCB71DCE61B10009B62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954AFCC21DCE65A30009B62F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		954AFCC51DCE69EB0009B62F /* Geocommerce.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Geocommerce.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 				954AFCA91DCE61B00009B62F /* Geocommerce */,
 				954AFCB41DCE61B00009B62F /* GeocommerceTests */,
 				954AFCA81DCE61B00009B62F /* Products */,
+				954AFCC41DCE69EB0009B62F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,7 @@
 		954AFCA91DCE61B00009B62F /* Geocommerce */ = {
 			isa = PBXGroup;
 			children = (
+				954AFCC11DCE652E0009B62F /* SourceCode */,
 				954AFCAA1DCE61B00009B62F /* Geocommerce.h */,
 				954AFCAB1DCE61B00009B62F /* Info.plist */,
 			);
@@ -84,6 +89,27 @@
 				954AFCB71DCE61B10009B62F /* Info.plist */,
 			);
 			path = GeocommerceTests;
+			sourceTree = "<group>";
+		};
+		954AFCC11DCE652E0009B62F /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				954AFCC21DCE65A30009B62F /* User.swift */,
+			);
+			name = SourceCode;
+			sourceTree = "<group>";
+		};
+		954AFCC41DCE69EB0009B62F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				954AFCC51DCE69EB0009B62F /* Geocommerce.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		954AFCC61DCE69EB0009B62F /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +174,7 @@
 				TargetAttributes = {
 					954AFCA61DCE61B00009B62F = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					954AFCAF1DCE61B00009B62F = {
@@ -166,6 +193,12 @@
 			mainGroup = 954AFC9D1DCE61B00009B62F;
 			productRefGroup = 954AFCA81DCE61B00009B62F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 954AFCC61DCE69EB0009B62F /* Products */;
+					ProjectRef = 954AFCC51DCE69EB0009B62F /* Geocommerce.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				954AFCA61DCE61B00009B62F /* Geocommerce */,
@@ -196,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954AFCC31DCE65A30009B62F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +354,7 @@
 		954AFCBC1DCE61B10009B62F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.ranjit.Geocommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +374,7 @@
 		954AFCBD1DCE61B10009B62F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +393,7 @@
 		954AFCBF1DCE61B10009B62F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GeocommerceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ranjit.GeocommerceTests;
@@ -367,6 +405,7 @@
 		954AFCC01DCE61B10009B62F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GeocommerceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ranjit.GeocommerceTests;
