@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "geoComApp/ViewController.swift"
-            timestampString = "501472243.594842"
+            timestampString = "501476885.96853"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>
