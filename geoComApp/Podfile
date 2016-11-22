@@ -1,0 +1,9 @@
+target 'geoComApp' do
+    
+    use_frameworks!
+    pod 'Firebase/Core'
+    pod 'Braintree'
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
+
+end
