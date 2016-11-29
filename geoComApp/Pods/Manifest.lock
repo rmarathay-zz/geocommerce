@@ -47,12 +47,14 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.0)
   - GoogleToolboxForMac/NSData+zlib (2.1.0):
     - GoogleToolboxForMac/Defines (= 2.1.0)
+  - Stripe (9.2.0)
 
 DEPENDENCIES:
   - Braintree
   - Firebase/Core
   - GoogleMaps
   - GooglePlaces
+  - Stripe
 
 SPEC CHECKSUMS:
   Braintree: 3eee856da5d30357a55439283b4bb3dbaddcaa7c
@@ -65,7 +67,8 @@ SPEC CHECKSUMS:
   GooglePlaces: 35636d86e5020cba3856eb988c09a5491de0a65a
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  Stripe: a47770e82db059d0e7e160f9aabc2997055ee911
 
-PODFILE CHECKSUM: 949fe298d24446b9e517647a326d53fb9fd4c2c7
+PODFILE CHECKSUM: d15556cc5e7b0953e8bc23a2dc05d2a5e5b2db38
 
 COCOAPODS: 1.1.1

@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleMaps
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FIRApp.configure()
         GMSServices.provideAPIKey("AIzaSyCZcbmiNRP9J2b2EgSX9RroQq9kRZtb7t8")
+        STPPaymentConfiguration.shared().publishableKey = "pk_test_Dou0IW8Mm98xRKqbRN9WDETv"
         return true
     }
 

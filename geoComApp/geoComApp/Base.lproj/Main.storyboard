@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="-87.200000000000003" y="106.59670164917542"/>
         </scene>
-        <!--Map View-->
+        <!--Map-->
         <scene sceneID="mim-i1-kW1">
             <objects>
-                <viewController id="mSu-Xb-F84" customClass="MapView" customModule="geoComApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mSu-Xb-F84" customClass="Map" customModule="geoComApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U1H-1a-mlF"/>
                         <viewControllerLayoutGuide type="bottom" id="KK7-1M-eCI"/>
@@ -60,12 +60,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2iM-ml-bcP">
-                                <rect key="frame" x="0.0" y="54" width="375" height="613"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bLn-WC-l35">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uh-vQ-eVR">
-                                <rect key="frame" x="16" y="20" width="37" height="37"/>
+                                <rect key="frame" x="9" y="14" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Left Arrow"/>
                                 <connections>
@@ -76,7 +76,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="MapUIView" destination="2iM-ml-bcP" id="DPX-3W-k7M"/>
+                        <outlet property="map" destination="bLn-WC-l35" id="6Q5-f8-rq5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIu-9U-bWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2ED1548D162988F9EBAC867F /* Pods_geoComApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C485C50D5854488B807830BC /* Pods_geoComApp.framework */; };
+		951512EA1DE8DFC500D29AD1 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951512E91DE8DFC500D29AD1 /* Map.swift */; };
 		9553FFB51DE39BE700FF6C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFB41DE39BE700FF6C7F /* AppDelegate.swift */; };
 		9553FFB71DE39BE700FF6C7F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFB61DE39BE700FF6C7F /* MapView.swift */; };
 		9553FFBA1DE39BE700FF6C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFB81DE39BE700FF6C7F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		47D54AADBDA05E5E8A90A5F5 /* Pods-geoComApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoComApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-geoComApp/Pods-geoComApp.release.xcconfig"; sourceTree = "<group>"; };
 		7905CA1E43FC99B19AB0AE26 /* Pods-geoComApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geoComApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geoComApp/Pods-geoComApp.debug.xcconfig"; sourceTree = "<group>"; };
+		951512E91DE8DFC500D29AD1 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		9553FFB11DE39BE700FF6C7F /* geoComApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geoComApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9553FFB41DE39BE700FF6C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9553FFB61DE39BE700FF6C7F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				9553FFB41DE39BE700FF6C7F /* AppDelegate.swift */,
 				9553FFD21DE3ECF100FF6C7F /* HomeView.swift */,
 				9553FFB61DE39BE700FF6C7F /* MapView.swift */,
+				951512E91DE8DFC500D29AD1 /* Map.swift */,
 				9553FFCB1DE3AA2700FF6C7F /* Pay.swift */,
 				9553FFB81DE39BE700FF6C7F /* Main.storyboard */,
 				9553FFBB1DE39BE700FF6C7F /* Assets.xcassets */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951512EA1DE8DFC500D29AD1 /* Map.swift in Sources */,
 				9553FFCC1DE3AA2700FF6C7F /* Pay.swift in Sources */,
 				9553FFD31DE3ECF100FF6C7F /* HomeView.swift in Sources */,
 				9553FFB71DE39BE700FF6C7F /* MapView.swift in Sources */,

@@ -8,20 +8,28 @@
 
 import UIKit
 import MapKit
+import GoogleMaps
 
-class MapView: UIViewController {
+class MapView: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
     
-    var locationManager = CLLocationManager()
+    var locationManager = CLLocationManager();
     
-    @IBOutlet weak var MapUIView: MapView!
-    
+    @IBOutlet weak var map: GMSMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.delegate = self;
+        locationManager.requestWhenInUseAuthorization();
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    override func loadView() {
+        //map.isMyLocationEnabled = true
+        let camera = GMSCameraPosition.camera(withLatitude: 1.285, longitude: 103.848, zoom: 12)
+        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        self.map = mapView
+    }
 }
 
