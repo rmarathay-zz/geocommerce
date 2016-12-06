@@ -38,5 +38,27 @@
 	</array>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Necessary for application to run</string>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb1245738125485462</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>1245738125485462</string>
+    <key>FacebookDisplayName</key>
+    <string>geoComApp</string>
+    
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
 </dict>
 </plist>

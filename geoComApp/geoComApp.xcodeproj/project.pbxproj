@@ -10,14 +10,17 @@
 		2ED1548D162988F9EBAC867F /* Pods_geoComApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C485C50D5854488B807830BC /* Pods_geoComApp.framework */; };
 		951512EA1DE8DFC500D29AD1 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951512E91DE8DFC500D29AD1 /* Map.swift */; };
 		9553FFB51DE39BE700FF6C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFB41DE39BE700FF6C7F /* AppDelegate.swift */; };
-		9553FFB71DE39BE700FF6C7F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFB61DE39BE700FF6C7F /* MapView.swift */; };
 		9553FFBA1DE39BE700FF6C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFB81DE39BE700FF6C7F /* Main.storyboard */; };
 		9553FFBC1DE39BE700FF6C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFBB1DE39BE700FF6C7F /* Assets.xcassets */; };
 		9553FFBF1DE39BE700FF6C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFBD1DE39BE700FF6C7F /* LaunchScreen.storyboard */; };
 		9553FFC71DE39C9D00FF6C7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFC61DE39C9D00FF6C7F /* GoogleService-Info.plist */; };
 		9553FFC91DE39D5F00FF6C7F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFC81DE39D5F00FF6C7F /* Podfile */; };
 		9553FFCC1DE3AA2700FF6C7F /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFCB1DE3AA2700FF6C7F /* Pay.swift */; };
-		9553FFD31DE3ECF100FF6C7F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFD21DE3ECF100FF6C7F /* HomeView.swift */; };
+		9553FFD31DE3ECF100FF6C7F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFD21DE3ECF100FF6C7F /* Home.swift */; };
+		95BFDB161DF6520A00D329DD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BFDB151DF6520A00D329DD /* FBSDKLoginKit.framework */; };
+		95BFDB181DF6535B00D329DD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BFDB171DF6535B00D329DD /* FBSDKCoreKit.framework */; };
+		95BFDB1A1DF653BE00D329DD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BFDB191DF653BE00D329DD /* Bolts.framework */; };
+		95BFDB1C1DF65D4000D329DD /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BFDB1B1DF65D4000D329DD /* MainData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +29,6 @@
 		951512E91DE8DFC500D29AD1 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		9553FFB11DE39BE700FF6C7F /* geoComApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geoComApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9553FFB41DE39BE700FF6C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9553FFB61DE39BE700FF6C7F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9553FFB91DE39BE700FF6C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9553FFBB1DE39BE700FF6C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9553FFBE1DE39BE700FF6C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,7 +37,11 @@
 		9553FFC81DE39D5F00FF6C7F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9553FFCB1DE3AA2700FF6C7F /* Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
 		9553FFCD1DE3AAA200FF6C7F /* geoComApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "geoComApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		9553FFD21DE3ECF100FF6C7F /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9553FFD21DE3ECF100FF6C7F /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		95BFDB151DF6520A00D329DD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		95BFDB171DF6535B00D329DD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		95BFDB191DF653BE00D329DD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		95BFDB1B1DF65D4000D329DD /* MainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
 		C485C50D5854488B807830BC /* Pods_geoComApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geoComApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,7 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BFDB161DF6520A00D329DD /* FBSDKLoginKit.framework in Frameworks */,
+				95BFDB181DF6535B00D329DD /* FBSDKCoreKit.framework in Frameworks */,
 				2ED1548D162988F9EBAC867F /* Pods_geoComApp.framework in Frameworks */,
+				95BFDB1A1DF653BE00D329DD /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				C485C50D5854488B807830BC /* Pods_geoComApp.framework */,
+				95BFDB191DF653BE00D329DD /* Bolts.framework */,
+				95BFDB171DF6535B00D329DD /* FBSDKCoreKit.framework */,
+				95BFDB151DF6520A00D329DD /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,10 +103,10 @@
 			children = (
 				9553FFCD1DE3AAA200FF6C7F /* geoComApp-Bridging-Header.h */,
 				9553FFB41DE39BE700FF6C7F /* AppDelegate.swift */,
-				9553FFD21DE3ECF100FF6C7F /* HomeView.swift */,
-				9553FFB61DE39BE700FF6C7F /* MapView.swift */,
+				9553FFD21DE3ECF100FF6C7F /* Home.swift */,
 				951512E91DE8DFC500D29AD1 /* Map.swift */,
-				9553FFCB1DE3AA2700FF6C7F /* Pay.swift */,
+				95BFDB1B1DF65D4000D329DD /* MainData.swift */,
+				955D80531DEDFC62009AD637 /* Idle Views */,
 				9553FFB81DE39BE700FF6C7F /* Main.storyboard */,
 				9553FFBB1DE39BE700FF6C7F /* Assets.xcassets */,
 				9553FFBD1DE39BE700FF6C7F /* LaunchScreen.storyboard */,
@@ -103,6 +115,14 @@
 				9553FFC81DE39D5F00FF6C7F /* Podfile */,
 			);
 			path = geoComApp;
+			sourceTree = "<group>";
+		};
+		955D80531DEDFC62009AD637 /* Idle Views */ = {
+			isa = PBXGroup;
+			children = (
+				9553FFCB1DE3AA2700FF6C7F /* Pay.swift */,
+			);
+			name = "Idle Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BFDB1C1DF65D4000D329DD /* MainData.swift in Sources */,
 				951512EA1DE8DFC500D29AD1 /* Map.swift in Sources */,
 				9553FFCC1DE3AA2700FF6C7F /* Pay.swift in Sources */,
-				9553FFD31DE3ECF100FF6C7F /* HomeView.swift in Sources */,
-				9553FFB71DE39BE700FF6C7F /* MapView.swift in Sources */,
+				9553FFD31DE3ECF100FF6C7F /* Home.swift in Sources */,
 				9553FFB51DE39BE700FF6C7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +377,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = geoComApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ranjit.geoComApp;
@@ -371,6 +395,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = geoComApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ranjit.geoComApp;

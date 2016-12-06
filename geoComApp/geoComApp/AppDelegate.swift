@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import GoogleMaps
 import Stripe
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         GMSServices.provideAPIKey("AIzaSyCZcbmiNRP9J2b2EgSX9RroQq9kRZtb7t8")
         STPPaymentConfiguration.shared().publishableKey = "pk_test_Dou0IW8Mm98xRKqbRN9WDETv"
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        let handled = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        // Add any custom logic here.
+        return handled
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
