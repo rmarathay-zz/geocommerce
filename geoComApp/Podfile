@@ -4,9 +4,7 @@ target 'geoComApp' do
     pod 'Firebase/Core'
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
-    pod 'Braintree'
-    pod 'GoogleMaps'
-    pod 'GooglePlaces'
     pod 'Stripe'
-
+    pod 'AFNetworking'
+    pod 'Alamofire'
 end

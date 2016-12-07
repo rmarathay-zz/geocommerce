@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import GoogleMaps
 import Stripe
 import FBSDKCoreKit
 
@@ -21,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
-        GMSServices.provideAPIKey("AIzaSyCZcbmiNRP9J2b2EgSX9RroQq9kRZtb7t8")
         STPPaymentConfiguration.shared().publishableKey = "pk_test_Dou0IW8Mm98xRKqbRN9WDETv"
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true

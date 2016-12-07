@@ -18,15 +18,16 @@ class Home: UIViewController, FBSDKLoginButtonDelegate {
     
     let loginButton: FBSDKLoginButton = FBSDKLoginButton()
     
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.isHidden = true;
-        
+        nextButton.isHidden = true
         FIRAuth.auth()?.addStateDidChangeListener { auth, user in
             if (user != nil){
-                let MainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil);
-                let MapViewController: UIViewController = MainStoryBoard.instantiateViewController(withIdentifier: "Map");
-                self.present(MapViewController, animated: true, completion: nil);
+                self.nextButton.isHidden = false
+                self.nextButtonTapped(sender: self.nextButton)
             }
             else{
                 // Optional: Place the button in the center of your view.
@@ -42,6 +43,12 @@ class Home: UIViewController, FBSDKLoginButtonDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func nextButtonTapped(sender: UIButton){
+        let MainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil);
+        let MapViewController: UIViewController = MainStoryBoard.instantiateViewController(withIdentifier: "Map");
+        self.present(MapViewController, animated: true, completion: nil);
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
@@ -64,5 +71,4 @@ class Home: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("User Logged Out");
     }
-    
 }

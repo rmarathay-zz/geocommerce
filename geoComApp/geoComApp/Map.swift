@@ -11,6 +11,8 @@ import UIKit
 import MapKit
 import Stripe
 import Firebase
+import FBSDKLoginKit
+import Alamofire
 
 class Map: UIViewController, CLLocationManagerDelegate{
     
@@ -20,18 +22,18 @@ class Map: UIViewController, CLLocationManagerDelegate{
     var locationManager = CLLocationManager()
     let regionRadius: CLLocationDistance = 1000
     @IBOutlet weak var map: MKMapView!
+    
     @IBAction func backButton(_ sender: Any) {
+        FBSDKLoginManager().logOut()
         let MainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil);
         let HomeViewController: UIViewController = MainStoryBoard.instantiateViewController(withIdentifier: "Home");
         self.present(HomeViewController, animated: true, completion: nil);
     }
     
     @IBAction func purchaseButton(_ sender: Any) {
-        let loc:NSArray = [currentLocation.coordinate.latitude, currentLocation.coordinate.longitude]
-        if (FIRAuth.auth()?.currentUser) != nil{
-            self.ref.child("locations/(count)").setValue(loc)
-            count += 1
-        }
+        let loc:NSDictionary = ["latitute" : currentLocation.coordinate.latitude, "longitude" : currentLocation.coordinate.longitude, "dollar" : 10, "time" : String(describing: NSDate())]
+        count += 1
+        self.ref.child("locations").child(String(count)).setValue(loc)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +66,30 @@ class Map: UIViewController, CLLocationManagerDelegate{
         //if(
         mainAnno.coordinate = centerLocation;
         self.map.addAnnotation(mainAnno);
+    }
+    
+    func postStripeToken(token: STPToken) {
+        
+        let URL = "http://localhost/donate/payment.php"
+        let params = ["stripeToken": token.tokenId,
+                      "amount": 10,
+                      "currency": "usd",
+                      "description": MainData.userEmail] as [String : Any]
+        
+//        let manager = AFHTTPRequestOperationManager()
+//        manager.POST(URL, parameters: params, success: { (operation, responseObject) -> Void in
+//            
+//            if let response = responseObject as? [String: String] {
+//                UIAlertView(title: response["status"],
+//                            message: response["message"],
+//                            delegate: nil,
+//                            cancelButtonTitle: "OK").show()
+//            }
+//            
+//        }) { (operation, error) -> Void in
+//            self.handleError(error!)
+//        }
+        
     }
     
 }

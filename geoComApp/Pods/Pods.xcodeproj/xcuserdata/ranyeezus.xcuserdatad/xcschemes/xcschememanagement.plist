@@ -4,17 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Braintree-Braintree-Drop-In-Localization.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Braintree-Braintree-UI-Localization.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Braintree.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,32 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0AE6D3F12B7AA0DC7B0AD2C40B62D29E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CC2761FFD4A79145443D7B0D82AE0CF</key>
+		<key>46D584FBD307175F42953DF965EB8771</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8205DD15B96613DA8CE169ABEF84ACEF</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A45977FC6E43D8F89F2FC615A3C9ED3</key>
+		<key>89A2293DF92CE7CA80979663302CD09E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B3FB988C5984ECFAB60AD2347266483B</key>
+		<key>9B93D3BD96AD00A1F22C88DE68C6DF87</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EC4F69AB797310F318D81A5C6FED0383</key>
+		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -9,13 +9,21 @@
 import Foundation
 import Firebase
 import CoreLocation
+import Stripe
 
 class MainData: NSObject{
     static var dataRef = FIRDatabase.database().reference()
     static var userRef = dataRef.child(userId)
     
-    
     static var username = "";
     static var userId = "";
+    
+    
+    // Card Information
+    static var cardNumber = "";
+    static var expMonth = 0;
+    static var expYear = 0;
+    static var cvcNumber = "";
+    static var userEmail = "";
     
 }
