@@ -13,6 +13,7 @@ import Stripe
 import Firebase
 import FBSDKLoginKit
 import Alamofire
+import AFNetworking
 
 class Map: UIViewController, CLLocationManagerDelegate{
     
@@ -68,28 +69,5 @@ class Map: UIViewController, CLLocationManagerDelegate{
         self.map.addAnnotation(mainAnno);
     }
     
-    func postStripeToken(token: STPToken) {
-        
-        let URL = "http://localhost/donate/payment.php"
-        let params = ["stripeToken": token.tokenId,
-                      "amount": 10,
-                      "currency": "usd",
-                      "description": MainData.userEmail] as [String : Any]
-        
-//        let manager = AFHTTPRequestOperationManager()
-//        manager.POST(URL, parameters: params, success: { (operation, responseObject) -> Void in
-//            
-//            if let response = responseObject as? [String: String] {
-//                UIAlertView(title: response["status"],
-//                            message: response["message"],
-//                            delegate: nil,
-//                            cancelButtonTitle: "OK").show()
-//            }
-//            
-//        }) { (operation, error) -> Void in
-//            self.handleError(error!)
-//        }
-        
-    }
     
 }

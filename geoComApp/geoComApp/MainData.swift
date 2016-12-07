@@ -21,8 +21,8 @@ class MainData: NSObject{
     
     // Card Information
     static var cardNumber = "";
-    static var expMonth = 0;
-    static var expYear = 0;
+    static var expMonth = 00;
+    static var expYear = 0000;
     static var cvcNumber = "";
     static var userEmail = "";
     
