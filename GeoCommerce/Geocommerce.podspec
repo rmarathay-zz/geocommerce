@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 # 1
 s.platform = :ios
 s.ios.deployment_target = '9.0'
-s.name = "Geocommerce"
+s.name = "geocommerce"
 s.summary = "RWPickFlavor lets developers collect location based payment data"
 s.requires_arc = true
 
