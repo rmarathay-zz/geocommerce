@@ -145,5 +145,53 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "geoComApp/AddCard.swift"
+            timestampString = "502840504.938701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "postStripeToken(token:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "geoComApp.AddCard.postStripeToken (token : __ObjC.STPToken) -&gt; ()"
+                  moduleName = "geoComApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ranyeezus/Documents/geocommerce/geoComApp/geoComApp/AddCard.swift"
+                  timestampString = "502839989.080569"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1035">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "geoComApp.AddCard.(postStripeToken (token : __ObjC.STPToken) -&gt; ()).(closure #1)"
+                  moduleName = "geoComApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ranyeezus/Documents/geocommerce/geoComApp/geoComApp/AddCard.swift"
+                  timestampString = "502839989.083592"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "2133">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

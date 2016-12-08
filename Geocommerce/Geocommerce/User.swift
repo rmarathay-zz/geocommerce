@@ -15,14 +15,4 @@ class User{
     init(init_userId: String){
         self.userId = init_userId;
     }
-    
-    
-    func collectData(){
-        
-    }
-    
-    
-    
-
-
 }

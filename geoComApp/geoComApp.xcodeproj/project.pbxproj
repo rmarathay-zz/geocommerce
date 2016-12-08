@@ -15,13 +15,13 @@
 		9553FFBF1DE39BE700FF6C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFBD1DE39BE700FF6C7F /* LaunchScreen.storyboard */; };
 		9553FFC71DE39C9D00FF6C7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFC61DE39C9D00FF6C7F /* GoogleService-Info.plist */; };
 		9553FFC91DE39D5F00FF6C7F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9553FFC81DE39D5F00FF6C7F /* Podfile */; };
-		9553FFCC1DE3AA2700FF6C7F /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFCB1DE3AA2700FF6C7F /* Pay.swift */; };
 		9553FFD31DE3ECF100FF6C7F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553FFD21DE3ECF100FF6C7F /* Home.swift */; };
 		9587BC3E1DF7D32300DC172C /* AddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9587BC3D1DF7D32300DC172C /* AddCard.swift */; };
 		95BFDB161DF6520A00D329DD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BFDB151DF6520A00D329DD /* FBSDKLoginKit.framework */; };
 		95BFDB181DF6535B00D329DD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BFDB171DF6535B00D329DD /* FBSDKCoreKit.framework */; };
 		95BFDB1A1DF653BE00D329DD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BFDB191DF653BE00D329DD /* Bolts.framework */; };
 		95BFDB1C1DF65D4000D329DD /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BFDB1B1DF65D4000D329DD /* MainData.swift */; };
+		95ECE4FD1DF8A79300D00241 /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECE4FC1DF8A79300D00241 /* Pay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,6 @@
 		9553FFC01DE39BE700FF6C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9553FFC61DE39C9D00FF6C7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9553FFC81DE39D5F00FF6C7F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9553FFCB1DE3AA2700FF6C7F /* Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
 		9553FFD21DE3ECF100FF6C7F /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		9587BC3D1DF7D32300DC172C /* AddCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCard.swift; sourceTree = "<group>"; };
 		9587BC3F1DF7DA8B00DC172C /* geoComApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "geoComApp-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		95BFDB171DF6535B00D329DD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		95BFDB191DF653BE00D329DD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		95BFDB1B1DF65D4000D329DD /* MainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
+		95ECE4FC1DF8A79300D00241 /* Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
 		C485C50D5854488B807830BC /* Pods_geoComApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geoComApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +108,7 @@
 				951512E91DE8DFC500D29AD1 /* Map.swift */,
 				9587BC3D1DF7D32300DC172C /* AddCard.swift */,
 				95BFDB1B1DF65D4000D329DD /* MainData.swift */,
+				95ECE4FC1DF8A79300D00241 /* Pay.swift */,
 				955D80531DEDFC62009AD637 /* Idle Views */,
 				9553FFB81DE39BE700FF6C7F /* Main.storyboard */,
 				9553FFBB1DE39BE700FF6C7F /* Assets.xcassets */,
@@ -123,7 +124,6 @@
 		955D80531DEDFC62009AD637 /* Idle Views */ = {
 			isa = PBXGroup;
 			children = (
-				9553FFCB1DE3AA2700FF6C7F /* Pay.swift */,
 			);
 			name = "Idle Views";
 			sourceTree = "<group>";
@@ -256,8 +256,8 @@
 			files = (
 				95BFDB1C1DF65D4000D329DD /* MainData.swift in Sources */,
 				9587BC3E1DF7D32300DC172C /* AddCard.swift in Sources */,
+				95ECE4FD1DF8A79300D00241 /* Pay.swift in Sources */,
 				951512EA1DE8DFC500D29AD1 /* Map.swift in Sources */,
-				9553FFCC1DE3AA2700FF6C7F /* Pay.swift in Sources */,
 				9553FFD31DE3ECF100FF6C7F /* Home.swift in Sources */,
 				9553FFB51DE39BE700FF6C7F /* AppDelegate.swift in Sources */,
 			);

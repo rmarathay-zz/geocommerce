@@ -18,30 +18,28 @@ class AddCard: UIViewController {
     @IBOutlet weak var exp: UITextField!
     @IBOutlet weak var cvc: UITextField!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var jsonLabel: UILabel!
+    
+    
     var stripeView = STPAddCardViewController();
     
     func postStripeToken(token: STPToken) {
         NSLog("Inside postStripeToken")
-        let URL = "http://localhost/donate/payment.php"
+        let URL = "https://geocomapp.herokuapp.com/"
         let params = ["stripeToken": token.tokenId,
-                      "amount": 10,
+                      "amount": "10",
                       "currency": "usd",
                       "description": MainData.userEmail] as [String : Any]
         
-        Alamofire.request(URL, method: post, parameters: params, encoding: <#T##ParameterEncoding#>, headers: <#T##HTTPHeaders?#>)
-//        let manager = AFHTTPSessionManager()
-//        manager.post(URL, parameters: params, success: { (operation, responseObject) -> Void in
-//            if let response = responseObject as? [String: String] {
-//                let alert: UIAlertController = UIAlertController(title: response["status"], message: response["message"], preferredStyle: .alert)
-//                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//                alert.addAction(defaultAction)
-//                self.present(alert, animated: true, completion: nil)
-//            }
-//            
-//        }) { (operation, error) -> Void in
-//            self.handleError(error: error as NSError)
-//        }
-        NSLog("Finished postStripeToken")
+        Alamofire.request(URL, method: .post, parameters: params).responseJSON{
+            response in
+            print(response.request!)
+            print(response.response!)
+            print(response.result)
+            if(String(describing: response.result) == "FAILURE"){
+                NSLog("There is an issue")
+            }
+        }
     }
     
     @IBAction func saveButton(_ sender: Any) {
@@ -66,13 +64,14 @@ class AddCard: UIViewController {
         }
 
         STPAPIClient.shared().createToken(withCard: stripeCard, completion: { (token, error) -> Void in
-            
+            NSLog(".createToken")
             if error != nil {
                 
                 self.handleError(error: error! as NSError)
                 return
             } 
             else{
+                NSLog("calling postStripeToken")
                 self.postStripeToken(token: token!)
             }
         })

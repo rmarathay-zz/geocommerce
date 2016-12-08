@@ -1,0 +1,6 @@
+framework module Pods_Geocommerce {
+  umbrella header "Pods-Geocommerce-umbrella.h"
+
+  export *
+  module * { export * }
+}

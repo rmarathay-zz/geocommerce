@@ -186,6 +186,13 @@
                                     <action selector="payButton:" destination="tQU-A3-mTz" eventType="touchUpInside" id="1pE-uE-qJC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bh-Tb-0Dn">
+                                <rect key="frame" x="16" y="429" width="343" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -194,6 +201,7 @@
                         <outlet property="cvc" destination="xLx-3e-ZIQ" id="ZCc-mG-Wkg"/>
                         <outlet property="email" destination="7zT-z9-owJ" id="PK2-0p-8p8"/>
                         <outlet property="exp" destination="h10-O9-egG" id="rYy-47-UXD"/>
+                        <outlet property="jsonLabel" destination="6bh-Tb-0Dn" id="h8G-2K-8fX"/>
                         <outlet property="saveButton" destination="sMX-30-Lgv" id="abo-YD-AxC"/>
                     </connections>
                 </viewController>

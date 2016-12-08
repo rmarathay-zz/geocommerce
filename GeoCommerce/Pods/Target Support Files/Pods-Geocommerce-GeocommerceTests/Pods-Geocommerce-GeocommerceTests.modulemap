@@ -1,0 +1,6 @@
+framework module Pods_Geocommerce_GeocommerceTests {
+  umbrella header "Pods-Geocommerce-GeocommerceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		338B6FC61DB092D2409C5A2B /* Pods_Geocommerce_GeocommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92A18BB389EE77200052F20 /* Pods_Geocommerce_GeocommerceTests.framework */; };
+		6D7224A31E7737B1F60850F2 /* Pods_Geocommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5DB7A3E99DBEE0FD1F336A /* Pods_Geocommerce.framework */; };
 		954AFCB11DCE61B00009B62F /* Geocommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954AFCA71DCE61B00009B62F /* Geocommerce.framework */; };
 		954AFCB61DCE61B00009B62F /* GeocommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AFCB51DCE61B00009B62F /* GeocommerceTests.swift */; };
 		954AFCB81DCE61B10009B62F /* Geocommerce.h in Headers */ = {isa = PBXBuildFile; fileRef = 954AFCAA1DCE61B00009B62F /* Geocommerce.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		954AFCC31DCE65A30009B62F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AFCC21DCE65A30009B62F /* User.swift */; };
+		95ECE5031DF8F8E200D00241 /* geocommerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECE5021DF8F8E200D00241 /* geocommerce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A9229C45BCED2A5C19FAC93 /* Pods-Geocommerce-GeocommerceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geocommerce-GeocommerceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Geocommerce-GeocommerceTests/Pods-Geocommerce-GeocommerceTests.release.xcconfig"; sourceTree = "<group>"; };
+		94EB886DDB6D59944583A14C /* Pods-Geocommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geocommerce.release.xcconfig"; path = "Pods/Target Support Files/Pods-Geocommerce/Pods-Geocommerce.release.xcconfig"; sourceTree = "<group>"; };
 		954AFCA71DCE61B00009B62F /* Geocommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geocommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		954AFCAA1DCE61B00009B62F /* Geocommerce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geocommerce.h; sourceTree = "<group>"; };
 		954AFCAB1DCE61B00009B62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +37,11 @@
 		954AFCB71DCE61B10009B62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		954AFCC21DCE65A30009B62F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		954AFCC51DCE69EB0009B62F /* Geocommerce.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Geocommerce.xcodeproj; sourceTree = "<group>"; };
+		95ECE5021DF8F8E200D00241 /* geocommerce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = geocommerce.swift; sourceTree = "<group>"; };
+		98021C7DD5D0FEC24DE8C298 /* Pods-Geocommerce-GeocommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geocommerce-GeocommerceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Geocommerce-GeocommerceTests/Pods-Geocommerce-GeocommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C92A18BB389EE77200052F20 /* Pods_Geocommerce_GeocommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geocommerce_GeocommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5DB7A3E99DBEE0FD1F336A /* Pods_Geocommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geocommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D522E839F0C4E9A6D42437F5 /* Pods-Geocommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geocommerce.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Geocommerce/Pods-Geocommerce.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7224A31E7737B1F60850F2 /* Pods_Geocommerce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,12 +58,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				954AFCB11DCE61B00009B62F /* Geocommerce.framework in Frameworks */,
+				338B6FC61DB092D2409C5A2B /* Pods_Geocommerce_GeocommerceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48E331DD8DEAD6C4BE474DA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D522E839F0C4E9A6D42437F5 /* Pods-Geocommerce.debug.xcconfig */,
+				94EB886DDB6D59944583A14C /* Pods-Geocommerce.release.xcconfig */,
+				98021C7DD5D0FEC24DE8C298 /* Pods-Geocommerce-GeocommerceTests.debug.xcconfig */,
+				8A9229C45BCED2A5C19FAC93 /* Pods-Geocommerce-GeocommerceTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		954AFC9D1DCE61B00009B62F = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +83,7 @@
 				954AFCB41DCE61B00009B62F /* GeocommerceTests */,
 				954AFCA81DCE61B00009B62F /* Products */,
 				954AFCC41DCE69EB0009B62F /* Frameworks */,
+				48E331DD8DEAD6C4BE474DA2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				954AFCC21DCE65A30009B62F /* User.swift */,
+				95ECE5021DF8F8E200D00241 /* geocommerce.swift */,
 			);
 			name = SourceCode;
 			sourceTree = "<group>";
@@ -103,12 +128,16 @@
 			isa = PBXGroup;
 			children = (
 				954AFCC51DCE69EB0009B62F /* Geocommerce.xcodeproj */,
+				CD5DB7A3E99DBEE0FD1F336A /* Pods_Geocommerce.framework */,
+				C92A18BB389EE77200052F20 /* Pods_Geocommerce_GeocommerceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		954AFCC61DCE69EB0009B62F /* Products */ = {
 			isa = PBXGroup;
+			children = (
+			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -130,10 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 954AFCBB1DCE61B10009B62F /* Build configuration list for PBXNativeTarget "Geocommerce" */;
 			buildPhases = (
+				BA607D9F09F57DADC6D15624 /* [CP] Check Pods Manifest.lock */,
 				954AFCA21DCE61B00009B62F /* Sources */,
 				954AFCA31DCE61B00009B62F /* Frameworks */,
 				954AFCA41DCE61B00009B62F /* Headers */,
 				954AFCA51DCE61B00009B62F /* Resources */,
+				1F8275286F5DCB9D61DA8B8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 954AFCBE1DCE61B10009B62F /* Build configuration list for PBXNativeTarget "GeocommerceTests" */;
 			buildPhases = (
+				D8D80F6F6B8E51A4BBD05799 /* [CP] Check Pods Manifest.lock */,
 				954AFCAC1DCE61B00009B62F /* Sources */,
 				954AFCAD1DCE61B00009B62F /* Frameworks */,
 				954AFCAE1DCE61B00009B62F /* Resources */,
+				72BF4303C044769D32EEEAC6 /* [CP] Embed Pods Frameworks */,
+				205F2BAA98136A3521E105EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,11 +258,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F8275286F5DCB9D61DA8B8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Geocommerce/Pods-Geocommerce-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		205F2BAA98136A3521E105EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Geocommerce-GeocommerceTests/Pods-Geocommerce-GeocommerceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72BF4303C044769D32EEEAC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Geocommerce-GeocommerceTests/Pods-Geocommerce-GeocommerceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA607D9F09F57DADC6D15624 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D80F6F6B8E51A4BBD05799 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		954AFCA21DCE61B00009B62F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95ECE5031DF8F8E200D00241 /* geocommerce.swift in Sources */,
 				954AFCC31DCE65A30009B62F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +466,7 @@
 		};
 		954AFCBC1DCE61B10009B62F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D522E839F0C4E9A6D42437F5 /* Pods-Geocommerce.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -373,6 +487,7 @@
 		};
 		954AFCBD1DCE61B10009B62F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94EB886DDB6D59944583A14C /* Pods-Geocommerce.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -392,6 +507,7 @@
 		};
 		954AFCBF1DCE61B10009B62F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98021C7DD5D0FEC24DE8C298 /* Pods-Geocommerce-GeocommerceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GeocommerceTests/Info.plist;
@@ -404,6 +520,7 @@
 		};
 		954AFCC01DCE61B10009B62F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9229C45BCED2A5C19FAC93 /* Pods-Geocommerce-GeocommerceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GeocommerceTests/Info.plist;
@@ -433,6 +550,7 @@
 				954AFCBD1DCE61B10009B62F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		954AFCBE1DCE61B10009B62F /* Build configuration list for PBXNativeTarget "GeocommerceTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +559,7 @@
 				954AFCC01DCE61B10009B62F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
