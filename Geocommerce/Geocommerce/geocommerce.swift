@@ -8,20 +8,24 @@
 
 import Foundation
 
-
-class GCpayment{
+class geocommerce{
     
     var time = NSDate()
     var amount = NSNumber()
     var longitude = NSNumber()
     var latitude = NSNumber()
     
-    init(time: NSDate, amount: NSNumber, longitude: NSNumber, latitude: NSNumber){
+    
+    public init(time: NSDate, amount: NSNumber, longitude: NSNumber, latitude: NSNumber){
         self.time = time
         self.amount = amount
         self.longitude = longitude
         self.latitude = latitude
     }
     
+    public func getStorable() -> [String : String]{
+        let storable = ["time" : String(describing: self.time), "amount" : String(describing: self.amount), "longitude" : String(describing: self.longitude), "latitude" : String(describing: self.latitude)]
+        return storable
+    }
     
 }

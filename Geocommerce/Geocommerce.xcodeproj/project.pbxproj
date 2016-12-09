@@ -12,7 +12,6 @@
 		954AFCB11DCE61B00009B62F /* Geocommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954AFCA71DCE61B00009B62F /* Geocommerce.framework */; };
 		954AFCB61DCE61B00009B62F /* GeocommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AFCB51DCE61B00009B62F /* GeocommerceTests.swift */; };
 		954AFCB81DCE61B10009B62F /* Geocommerce.h in Headers */ = {isa = PBXBuildFile; fileRef = 954AFCAA1DCE61B00009B62F /* Geocommerce.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		954AFCC31DCE65A30009B62F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AFCC21DCE65A30009B62F /* User.swift */; };
 		95ECE5031DF8F8E200D00241 /* geocommerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECE5021DF8F8E200D00241 /* geocommerce.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		954AFCB01DCE61B00009B62F /* GeocommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocommerceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954AFCB51DCE61B00009B62F /* GeocommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocommerceTests.swift; sourceTree = "<group>"; };
 		954AFCB71DCE61B10009B62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		954AFCC21DCE65A30009B62F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		954AFCC51DCE69EB0009B62F /* Geocommerce.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Geocommerce.xcodeproj; sourceTree = "<group>"; };
 		95ECE5021DF8F8E200D00241 /* geocommerce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = geocommerce.swift; sourceTree = "<group>"; };
 		98021C7DD5D0FEC24DE8C298 /* Pods-Geocommerce-GeocommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geocommerce-GeocommerceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Geocommerce-GeocommerceTests/Pods-Geocommerce-GeocommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +97,7 @@
 		954AFCA91DCE61B00009B62F /* Geocommerce */ = {
 			isa = PBXGroup;
 			children = (
-				954AFCC11DCE652E0009B62F /* SourceCode */,
+				95ECE5021DF8F8E200D00241 /* geocommerce.swift */,
 				954AFCAA1DCE61B00009B62F /* Geocommerce.h */,
 				954AFCAB1DCE61B00009B62F /* Info.plist */,
 			);
@@ -113,15 +111,6 @@
 				954AFCB71DCE61B10009B62F /* Info.plist */,
 			);
 			path = GeocommerceTests;
-			sourceTree = "<group>";
-		};
-		954AFCC11DCE652E0009B62F /* SourceCode */ = {
-			isa = PBXGroup;
-			children = (
-				954AFCC21DCE65A30009B62F /* User.swift */,
-				95ECE5021DF8F8E200D00241 /* geocommerce.swift */,
-			);
-			name = SourceCode;
 			sourceTree = "<group>";
 		};
 		954AFCC41DCE69EB0009B62F /* Frameworks */ = {
@@ -342,7 +331,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				95ECE5031DF8F8E200D00241 /* geocommerce.swift in Sources */,
-				954AFCC31DCE65A30009B62F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
